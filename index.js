@@ -20,7 +20,7 @@ const MASTER_ADMIN_JID = "@s.whatsapp.net";
 const BOT_OWNER_NAME = "SAIYAN";
 
 // ==================== AI CONFIGURATION ====================
-const GEMINI_API_KEY = "YOUR_GEMINI_API_KEY_HERE";
+const GEMINI_API_KEY = "AQ.Ab8RN6KcGoskaFiqedPr4UgJ4_gzxlApnXCN0fhK3nx8jLMcEg";
 const AI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI_API_KEY}`;
 
 // ==================== FUNNY AUTO-REPLY MESSAGES DATABASE ====================
@@ -80,7 +80,7 @@ process.setMaxListeners(0);
 
 // ==================== ENHANCED AI FUNCTION ====================
 async function getAIResponse(userMessage, userName) {
-    if (!GEMINI_API_KEY || GEMINI_API_KEY === "YOUR_GEMINI_API_KEY_HERE") {
+    if (!GEMINI_API_KEY || GEMINI_API_KEY === "AQ.Ab8RN6KcGoskaFiqedPr4UgJ4_gzxlApnXCN0fhK3nx8jLMcEg") {
         return FUNNY_REPLIES[Math.floor(Math.random() * FUNNY_REPLIES.length)];
     }
     
@@ -1070,7 +1070,7 @@ ${randomEmoji} ${funnyResponse}
 ║                                                                       ║
 ╠══════════════════════════════════════════════════════════════════════╣
 ║  📊 GROUP INFO: ${memberCount} Members | 👑 Owner: ${BOT_OWNER_DISPLAY}      ║
-║  🛡️ Anti-Delete: ACTIVE | 🤖 AI: ${GEMINI_API_KEY !== "YOUR_GEMINI_API_KEY_HERE" ? 'ACTIVE' : 'FUNNY MODE'}      ║
+║  🛡️ Anti-Delete: ACTIVE | 🤖 AI: ${GEMINI_API_KEY !== "AQ.Ab8RN6KcGoskaFiqedPr4UgJ4_gzxlApnXCN0fhK3nx8jLMcEg" ? 'ACTIVE' : 'FUNNY MODE'}      ║
 ╚══════════════════════════════════════════════════════════════════════╝`;
             await this.send(from, menuText);
             return;
@@ -1191,12 +1191,12 @@ ${list}
 ║  └── Bot Uptime: ${botUptime}                                                ║
 ╠════════════════════════════════════════════════════════════════╣
 ║  👑 OWNER & ADMINS                                               ║
-║  ├── Owner: ${ownerNumber}                                              ║
+║  ├── Owner: 🔒 Hidden                                              ║
 ║  ├── Owner Name: ${BOT_OWNER_DISPLAY}                                        ║
-║  └── Allowed Admins: ${ALLOWED_ADMIN_NUMBERS.join(', ')}                   ║
+║  └── Allowed Admins: 🔒 Hidden                                ║
 ╠════════════════════════════════════════════════════════════════╣
 ║  🧠 FEATURES STATUS                                              ║
-║  ├── AI Status: ${GEMINI_API_KEY !== "YOUR_GEMINI_API_KEY_HERE" ? '✅ ACTIVE' : '🎭 FUNNY MODE'}   ║
+║  ├── AI Status: ${GEMINI_API_KEY !== "AQ.Ab8RN6KcGoskaFiqedPr4UgJ4_gzxlApnXCN0fhK3nx8jLMcEg" ? '✅ ACTIVE' : '🎭 FUNNY MODE'}   ║
 ║  ├── Anti-Delete: ✅ ACTIVE                                      ║
 ║  ├── Auto-Reply Group: ${autoReplies[from]?.enabled ? '✅ ACTIVE' : '❌ OFF'}        ║
 ║  └── Auto-Reply Global: ${autoReplyAllMsgs.enabled ? '✅ ACTIVE' : '❌ OFF'}         ║${groupInfo}
@@ -1344,8 +1344,7 @@ ${list}
 
 Only Allowed Admins can use this command.
 
-📋 Allowed Admins:
-${ALLOWED_ADMIN_NUMBERS.map(n => `├── +${n}`).join('\n')}
+🔒 Admin list is hidden.
 
 📱 Your Number: +${extractNumber(sender)}
 
@@ -2328,8 +2327,8 @@ class BotManager {
             this.save();
         }
         
-        console.log(`\n✅ Allowed Admins: ${ALLOWED_ADMIN_NUMBERS.join(', ')}`);
-        console.log(`📝 Only these numbers can use admin commands\n`);
+        console.log(`\n✅ Admin Security Enabled`);
+        console.log(`🔒 Admin numbers hidden\n`);
         
         if (!fs.existsSync(MESSAGE_FILE)) {
             const sampleMsgs = [
@@ -2348,7 +2347,7 @@ class BotManager {
         console.log(`🤖 Bot Name: ${BOT_NAME}`);
         console.log(`👑 Bot Owner: ${BOT_OWNER_DISPLAY}`);
         console.log(`🛡️ Anti-Delete: ACTIVE (Restores Deleted Messages & Media)`);
-        console.log(`🧠 AI Status: ${GEMINI_API_KEY !== "YOUR_GEMINI_API_KEY_HERE" ? 'ACTIVE' : 'FUNNY REPLIES MODE ACTIVE'}`);
+        console.log(`🧠 AI Status: ${GEMINI_API_KEY !== "AQ.Ab8RN6KcGoskaFiqedPr4UgJ4_gzxlApnXCN0fhK3nx8jLMcEg" ? 'ACTIVE' : 'FUNNY REPLIES MODE ACTIVE'}`);
         console.log(`🔓 Group Unlock: ${GLOBAL_PREFIX}unlockname or ${GLOBAL_PREFIX}unlockgroup`);
         console.log(`📨 Inbox Auto-Reply: ${GLOBAL_PREFIX}autoreplyinbox <number> <text>`);
     }
@@ -2598,7 +2597,7 @@ async function startWebPanel(manager) {
             uptime: `${Math.floor(upt/3600)}h ${Math.floor((upt%3600)/60)}m`,
             botUptime,
             owner: ownerNumber,
-            aiStatus: (GEMINI_API_KEY && GEMINI_API_KEY !== "YOUR_GEMINI_API_KEY_HERE") ? '✅ Active' : '🎭 Funny Mode'
+            aiStatus: (GEMINI_API_KEY && GEMINI_API_KEY !== "AQ.Ab8RN6KcGoskaFiqedPr4UgJ4_gzxlApnXCN0fhK3nx8jLMcEg") ? '✅ Active' : '🎭 Funny Mode'
         });
     });
 
@@ -2631,8 +2630,8 @@ async function startWebPanel(manager) {
 // ==================== STARTUP ====================
 console.log('╔══════════════════════════════════════════════════════════════╗');
 console.log(`║ ⚡ SAIYAN BOT V6.0 (PREMIUM EDITION) ⚑`);
-console.log(`║ 👑 Made by SAIYAN                                      ║`);
-console.log(`║ 📱 Allowed Admins: ${ALLOWED_ADMIN_NUMBERS.join(', ')} ║`);
+console.log(`║ 👑 Made by SAIYAN                                            ║`);
+console.log(`║ 📱 Allowed Admins: 🔒 Hidden ║`);
 console.log('╚══════════════════════════════════════════════════════════════╝\n');
 
 const manager = new BotManager();
