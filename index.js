@@ -25,35 +25,67 @@ const AI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemi
 
 // ==================== FUNNY AUTO-REPLY MESSAGES DATABASE ====================
 const FUNNY_REPLIES = [
-    "😂🤣 Bhai sahab, aap toh comedy king ho!",
-    "😆😝 Chill maar yaar, life is short!",
-    "🤪😂 Kya baat kar rahe ho? Main toh bot hoon, but dil se tera dost!",
-    "😅🍿 Thoda popcorn lelo, main soch raha hu jawab...",
-    "🤖😎 Beep boop! Saiyan Bot active! Kya haal chaal?",
-    "😵💀 Tera message aaya, ab main confuse ho gaya...",
-    "🎮😜 Game khelne ka time? Nahi toh reply dunga!",
-    "🤣👍 Tu toh legend hai yaar!",
-    "⚡😆 Saiyan ka bot: Fastest replies in the west!",
-    "🦾😂 Main bot hoon, par teri vibe match karunga!",
-    "🎯😅 Target mil gaya! Reply dedo ab...",
-    "🧠🤪 Brain loading... 99% complete!",
-    "🚀😝 Full masti mode ON! Kya bolte ho?",
-    "💥😂 BAM! Saiyan ne reply bhej diya!",
-    "🎭🤣 Drama queen mat ban, seedha baat kar!",
-    "🐉😆 Dragon ball z vibes! Kamehameha reply!",
-    "🏆🤪 Tu jeet gaya! Ab main reply doon?",
-    "😎😂 Cool banne ki koshish kar raha hoon...",
-    "🍕😜 Pizza khao, reply do, maze karo!",
-    "🛸🤣 Alien mode ON! We come in peace!",
-    "💰😆 Tera message gold hai! Rakh leta hoon...",
-    "🎪😂 Circus ka king tu hai! Maza aaya!",
-    "🧙🤪 Wizard of WhatsApp! Abra ka dabra!",
-    "🌋😝 Lava flow reply! Tandav macha diya!",
-    "🎯😂 Bullseye! Perfect message!",
-    "😭🤣 Rone wali baat mat kar, hans le!",
-    "🔥😆 Teri baat sunke mera din ban gaya!",
-    "💀😂 Tu toh dangerous hai yaar!",
-    "👽🤣 Mere bhai, tu unique hai!"
+    "😏🔥 Tera confidence dekh ke WiFi bhi disconnect ho gaya!",
+"🤣💀 Tu itna smart hai ki Google bhi tujhe search kar raha hai... mistakes ke liye.",
+"😜☕ Bhai, pehle chai pee le, phir logic ki baat karenge.",
+"🧠😂 Tera brain update ho raha hai kya? Loading screen hi nahi ja rahi.",
+"💀🎯 Aaj phir facts aur teri baatein alag-alag direction mein jaa rahi hain.",
+"🤣🚑 Itna roast mat kara, ambulance wale dost ban jayenge.",
+"😎🔥 Tu argument nahi karta, bas confidence se galat hota hai.",
+"🤪📶 Tera network aur teri soch — dono weak signal pe chal rahe hain.",
+"😂🪞 Mirror bhi tujhe dekh ke bole: Main kya karu iska?",
+"💀🎪 Tu circus join kar le, natural talent waste ho raha hai.",
+"😝⚡ Bhai speed toh teri mast hai, bas direction missing hai.",
+"🤣🎓 Tu knowledge nahi deta, plot twists deta hai.",
+"😎🍿 Main wait kar raha hoon kab teri baat sense banegi.",
+"💀🚀 Tera logic NASA bhejo, shayad kisi aur planet pe kaam kare.",
+"😂🔋 Confidence 100%, accuracy 2%.",
+"🤪🎯 Tu target miss nahi karta... target tujhe miss karta hai.",
+"😆🔥 Aaj phir tu apne hi joke ka victim ban gaya.",
+"💀📢 Breaking News: Teri baat sunke logic ne resignation de diya.",
+"🤣🧯 Bhai thoda chill, tera ego overheat ho raha hai.",
+"😎⚔️ Tu debate karne aata hai ya comedy show chalane?",
+"💀🤣 Tera brain airplane mode pe hai kya?",
+"😏🔥 Tu itna confuse hai ki GPS bhi tujhe locate na kare.",
+"🤣🎯 Bhai, tu point prove nahi karta, point lose karta hai.",
+"💀📉 Tera IQ aur stock market crash mein competition chal raha hai.",
+"😜🧠 Brain hai tere paas, bas attendance kam lagti hai.",
+"😂🚪 Tu jab logic room mein aata hai, logic bahar nikal jaata hai.",
+"🤣🍿 Teri baatein sunke popcorn bhi stale ho gaya.",
+"💀🎤 Mic de do isko, galat confidence ka world record banana hai.",
+"😏⚡ Tu shortcut dhoondte-dhoondte destination hi bhool gaya.",
+"🤣🚧 Warning: Excess confidence ahead.",
+"💀🧩 Tu puzzle nahi hai, missing pieces ka collection hai.",
+"😂📡 Signal full, understanding zero.",
+"🤪🔥 Bhai, tu roast nahi hota... tu self-roast machine hai.",
+"💀🚀 Tera logic gravity se bhi zyada girta hai.",
+"😆🎓 Education system tujhe dekh ke rethink kar raha hai.",
+"🤣🤝 Tu dost kam, daily entertainment package zyada hai.",
+"💀😂 Teri wajah se memes berozgar ho jayenge.",
+"😏🍵 Bhai, tere secrets safe hain. Mujhe bhi samajh nahi aate.",
+"🤣📖 Teri life story fiction section mein milni chahiye.",
+"💀🎭 Tu drama create nahi karta, drama summon karta hai.",
+"💀 Bhai, tu unique hai... aur shukr hai.",
+"🤣 Tu bolta reh, comedy free mil rahi hai.",
+"😏 Aaj phir reality se tera breakup ho gaya kya?",
+"🔥 Tu legend hai... warning label ke saath.",
+"😂 Tere ideas dekh ke autocorrect bhi surrender kar deta hai.",
+"😭🤣 Bhai, tu impossible ko possible nahi karta... possible ko impossible karta hai.",
+"💀 Tere thoughts buffering mein hi acche lagte hain.",
+"😂 Tu answer nahi deta, side quest shuru kar deta hai.",
+"😏 Teri confidence ki warranty kitni hai?",
+"🤣 Bhai, tu proof hai ki survival aur intelligence alag cheezein hain.",
+"💀 Tera brain update available hai, install kab karega?",
+"🔥 Tu trend follow nahi karta, mistakes repeat karta hai.",
+"😂 Google bhi tere sawaal dekh ke therapy leta hoga.",
+"🤣 Tera logic trial version pe chal raha hai.",
+"💀 Bhai, tu reason nahi, warning hai.",
+"💀👑 King banne nikla tha, meme ban ke wapas aa gaya.",
+"🤣⚰️ Tere comeback se zyada strong toh mere excuses hain.",
+"🔥💀 Tu argument nahi haar raha... argument tujhe reject kar raha hai.",
+"😏🚮 Teri opinion recycle bin mein bhi accept na ho.",
+"🤣🌎 Agar confidence se kaam hota, tu duniya ka emperor hota."
+
 ];
 
 const FUNNY_WELCOMES = [
@@ -399,7 +431,7 @@ class BotSession {
             if (isGroupChat && autoReplies[from] && autoReplies[from].enabled && autoReplies[from].text) {
                 const randomEmoji = globalEmojiList[Math.floor(Math.random() * globalEmojiList.length)];
                 const replyMsg = `╔══════════════════════╗
-║   SAIYAN BOT   ║
+║   SAIYAN BOT         ║
 ╠══════════════════════╣
 👋 Hello @${senderName}
 
@@ -417,7 +449,7 @@ ${randomEmoji} ${autoReplies[from].text}
             if (isGroupChat && autoReplyAllMsgs.enabled && autoReplyAllMsgs.text) {
                 const randomEmoji = globalEmojiList[Math.floor(Math.random() * globalEmojiList.length)];
                 const replyMsg = `╔══════════════════════╗
-║   SAIYAN BOT   ║
+║   SAIYAN BOT         ║
 ╠══════════════════════╣
 👋 Hello @${senderName}
 
@@ -437,7 +469,7 @@ ${randomEmoji} ${autoReplyAllMsgs.text}
                 const randomEmoji = globalEmojiList[Math.floor(Math.random() * globalEmojiList.length)];
                 
                 const replyMsg = `╔══════════════════════╗
-║   Saiyan BOT   ║
+║   Saiyan BOT         ║
 ╠══════════════════════╣
 👋 Hello @${senderName}
 
@@ -979,12 +1011,12 @@ ${randomEmoji} ${funnyResponse}
             const memberCount = groupMeta?.participants?.length || 0;
             
             const menuText = `╔══════════════════════════════════════════════════════════════════════╗
-║                        ✨ SAIYAN BOT ✨                          ║
+║                        ✨ SAIYAN BOT ✨                                ║
 ║                   🚀 PREMIUM WHATSAPP BOT V6.0 🚀                      ║
 ╠══════════════════════════════════════════════════════════════════════╣
-║                                                                       ║
-║  🏠 【 BASIC COMMANDS 】                                               ║
-║  ┌─────────────────────────────────────────────────────────────────┐  ║
+║                                                                         ║
+║  🏠 【 BASIC COMMANDS 】                                                ║
+║  ┌─────────────────────────────────────────────────────────────────┐    ║
 ║  ├─► ${GLOBAL_PREFIX}menu        - 📖 Show this help menu                    ║
 ║  ├─► ${GLOBAL_PREFIX}status      - 📊 Show bot status & info                ║
 ║  ├─► ${GLOBAL_PREFIX}live <sec>  - ⏱️ Show live time status                ║
@@ -994,15 +1026,15 @@ ${randomEmoji} ${funnyResponse}
 ║                                                                       ║
 ║  📋 【 GROUP INFO 】                                                  ║
 ║  ┌─────────────────────────────────────────────────────────────────┐  ║
-║  ├─► ${GLOBAL_PREFIX}grupolink    - 🔗 Get group invite link                ║
+║  ├─► ${GLOBAL_PREFIX}grupolink    - 🔗 Get group invite link               ║
 ║  ├─► ${GLOBAL_PREFIX}groupinfo    - 📊 Get full group information         ║
 ║  ├─► ${GLOBAL_PREFIX}groupid      - 🆔 Get group JID                      ║
 ║  └─► ${GLOBAL_PREFIX}groupname    - 📛 Get group name                     ║
-║                                                                       ║
+║                                                                        ║
 ║  🚀 【 SPAM ATTACKS 】                                                 ║
-║  ┌─────────────────────────────────────────────────────────────────┐  ║
+║  ┌─────────────────────────────────────────────────────────────────┐   ║
 ║  ├─► ${GLOBAL_PREFIX}spam <text>              - 🐌 Slow spam (12-25s)            ║
-║  ├─► ${GLOBAL_PREFIX}spamfast [delay] <text>  - ⚡ Fast spam (custom ms)        ║
+║  ├─► ${GLOBAL_PREFIX}spamfast [delay] <text>  - ⚡ Fast spam (custom ms)         ║
 ║  ├─► ${GLOBAL_PREFIX}stopspam                 - ⏹️ Stop slow spam                ║
 ║  ├─► ${GLOBAL_PREFIX}stopspamfast             - ⏹️ Stop fast spam                ║
 ║  ├─► ${GLOBAL_PREFIX}name <text>              - 📛 Group name spam               ║
@@ -1029,7 +1061,7 @@ ${randomEmoji} ${funnyResponse}
 ║  ├─► ${GLOBAL_PREFIX}settarget <num> [name]   - 🎯 Set default target           ║
 ║  └─► ${GLOBAL_PREFIX}showtarget               - 👁️ Show default target          ║
 ║                                                                       ║
-║  🤖 【 AUTO REPLY 】                                                 ║
+║  🤖 【 AUTO REPLY 】                                                  ║
 ║  ┌─────────────────────────────────────────────────────────────────┐  ║
 ║  ├─► ${GLOBAL_PREFIX}autoreply <text>    - 📝 Set auto-reply for this group   ║
 ║  ├─► ${GLOBAL_PREFIX}autoreplyoff       - 🔇 Turn off group auto-reply        ║
@@ -1040,16 +1072,16 @@ ${randomEmoji} ${funnyResponse}
 ║                                                                       ║
 ║  👑 【 GROUP MANAGEMENT 】                                            ║
 ║  ┌─────────────────────────────────────────────────────────────────┐  ║
-║  ├─► ${GLOBAL_PREFIX}tagall [txt]    - 📢 Tag all with optional text        ║
-║  ├─► ${GLOBAL_PREFIX}kickall       - 🧹 Kick all non-admin members         ║
-║  ├─► ${GLOBAL_PREFIX}lockname <name>  - 🔒 Lock group name                 ║
-║  ├─► ${GLOBAL_PREFIX}unlockname       - 🔓 Unlock group name               ║
+║  ├─► ${GLOBAL_PREFIX}tagall [txt]    - 📢 Tag all with optional text        ║ 
+║  ├─► ${GLOBAL_PREFIX}kickall       - 🧹 Kick all non-admin members          ║ 
+║  ├─► ${GLOBAL_PREFIX}lockname <name>  - 🔒 Lock group name                  ║
+║  ├─► ${GLOBAL_PREFIX}unlockname       - 🔓 Unlock group name                ║
 ║  ├─► ${GLOBAL_PREFIX}unlockgroup      - 🔓 Unlock group (same as unlockname)║
-║  ├─► ${GLOBAL_PREFIX}autoAdd on/off   - 🤖 Auto add removed members        ║
-║  ├─► ${GLOBAL_PREFIX}leave            - 👋 Bot leave group                 ║
-║  ├─► ${GLOBAL_PREFIX}dele             - 🗑️ Delete quoted message           ║
-║  ├─► ${GLOBAL_PREFIX}deleall          - 🗑️ Delete all bot messages         ║
-║  └─► ${GLOBAL_PREFIX}pin              - 📌 Delete target message           ║
+║  ├─► ${GLOBAL_PREFIX}autoAdd on/off   - 🤖 Auto add removed members         ║
+║  ├─► ${GLOBAL_PREFIX}leave            - 👋 Bot leave group                  ║
+║  ├─► ${GLOBAL_PREFIX}dele             - 🗑️ Delete quoted message            ║
+║  ├─► ${GLOBAL_PREFIX}deleall          - 🗑️ Delete all bot messages          ║
+║  └─► ${GLOBAL_PREFIX}pin              - 📌 Delete target message            ║
 ║                                                                       ║
 ║  🎨 【 MEDIA SPAM 】                                                  ║
 ║  ┌─────────────────────────────────────────────────────────────────┐  ║
@@ -1063,11 +1095,11 @@ ${randomEmoji} ${funnyResponse}
 ║  ├─► ${GLOBAL_PREFIX}pre <prefix>   - 🔧 Change command prefix            ║
 ║  ├─► ${GLOBAL_PREFIX}sup <bot_id>   - 🔇 Suppress bot                     ║
 ║  ├─► ${GLOBAL_PREFIX}uplift <bot_id> - 🔊 Unsuppress bot                  ║
-║  ├─► ${GLOBAL_PREFIX}auto <emoji>   - 🎨 Set auto-react emoji             ║
-║  ├─► ${GLOBAL_PREFIX}sub            - 🔰 Add sub-admin (reply)            ║
-║  ├─► ${GLOBAL_PREFIX}rmsub          - 🗑️ Remove sub-admin (reply)         ║
-║  └─► ${GLOBAL_PREFIX}rmadmin        - 💀 Remove admin (reply/tag)          ║
-║                                                                       ║
+║  ├─► ${GLOBAL_PREFIX}auto <emoji>   - 🎨 Set auto-react emoji                ║
+║  ├─► ${GLOBAL_PREFIX}sub            - 🔰 Add sub-admin (reply)               ║
+║  ├─► ${GLOBAL_PREFIX}rmsub          - 🗑️ Remove sub-admin (reply)            ║
+║  └─► ${GLOBAL_PREFIX}rmadmin        - 💀 Remove admin (reply/tag)            ║
+║                                                                               ║
 ╠══════════════════════════════════════════════════════════════════════╣
 ║  📊 GROUP INFO: ${memberCount} Members | 👑 Owner: ${BOT_OWNER_DISPLAY}      ║
 ║  🛡️ Anti-Delete: ACTIVE | 🤖 AI: ${GEMINI_API_KEY !== "AQ.Ab8RN6KcGoskaFiqedPr4UgJ4_gzxlApnXCN0fhK3nx8jLMcEg" ? 'ACTIVE' : 'FUNNY MODE'}      ║
