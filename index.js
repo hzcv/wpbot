@@ -492,7 +492,7 @@ class BotSession {
             if (isGroupChat && autoReplies[from] && autoReplies[from].enabled && autoReplies[from].text) {
                 const randomEmoji = globalEmojiList[Math.floor(Math.random() * globalEmojiList.length)];
                 const replyMsg = `╔══════════════════════════════════╗
-║               SAIYAN BOT   ║
+║               SAIYAN BOT             ║
 ╠══════════════════════════════════════╣
 👋 Hello @${senderName}
 
@@ -509,7 +509,7 @@ ${randomEmoji} ${autoReplies[from].text}
             if (isGroupChat && autoReplyAllMsgs.enabled && autoReplyAllMsgs.text) {
                 const randomEmoji = globalEmojiList[Math.floor(Math.random() * globalEmojiList.length)];
                 const replyMsg = `╔══════════════════════════════════╗
-║               SAIYAN BOT   ║
+║               SAIYAN BOT             ║
 ╠══════════════════════════════════════╣
 👋 Hello @${senderName}
 
@@ -527,7 +527,7 @@ ${randomEmoji} ${autoReplyAllMsgs.text}
                 const funnyResponse = await getAIResponse(text, senderName);
                 const randomEmoji = globalEmojiList[Math.floor(Math.random() * globalEmojiList.length)];
                 const replyMsg = `╔══════════════════════════════════╗
-║               SAIYAN BOT   ║
+║               SAIYAN BOT             ║
 ╠══════════════════════════════════════╣
 👋 Hello @${senderName}
 
@@ -1749,7 +1749,7 @@ ${list}
 ║  └── Bot Uptime: ${botUptime}                                                ║
 ╠════════════════════════════════════════════════════════════════╣
 ║  👑 OWNER & ADMINS                                               ║
-║  ├── Owner: ${ownerNumber}                                              ║
+║  ├── Owner: 🔒 Hidden                                              ║
 ║  ├── Owner Name: ${BOT_OWNER_DISPLAY}                                        ║
 ║  └── Allowed Admins: 🔒 Hidden                                 ║
 ╠════════════════════════════════════════════════════════════════╣
@@ -3107,11 +3107,10 @@ async function startWebPanel(manager) {
                     margin-bottom: 20px;
                 }
                 .card {
-                    background: rgba(255,255,255,0.1);
-                    backdrop-filter: blur(10px);
+                    background: rgba(20,20,20,0.45);
+                    backdrop-filter: blur(3px);
+                    border: 1px solid rgba(255,255,255,0.15);
                     border-radius: 20px;
-                    padding: 20px;
-                    border: 1px solid rgba(255,255,255,0.2);
                 }
                 .card-title {
                     font-size: 1.3rem;
